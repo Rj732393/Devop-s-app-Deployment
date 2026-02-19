@@ -1,24 +1,19 @@
-# README
+# Spree Commerce Deployment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Live Store:** http://3.111.217.91:3000
+**Admin Panel:** http://3.111.217.91:3000/admin
 
-Things you may want to cover:
+## Status
+- EC2 Ubuntu 22.04
+- MySQL 8.0 + spree_development  
+- Ruby 3.2 + Rails 7.1
+- Spree Commerce 5.x
+- 46/47 migrations complete
 
-* Ruby version
+## Quick Start
+```bash
+bundle install
+bundle exec rails db:migrate
+bundle exec rails db:seed
+bundle exec rails server -b 0.0.0.0
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
